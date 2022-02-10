@@ -37,61 +37,150 @@
 
 //Console.WriteLine($"The Total wage   of {hrs}  hrs is {netpay}");
 
-            //int sum = 0;
-            //int f = 1;
-            //for (int i = 1; i <= 5; i++)
-            //{
-            //    sum += i;
-            //    f *= i;
-            //    Console.Write($"{i}+");
-            //}
-            //Console.Write($"\b={sum}");
-            //Console.Write($"\n The factorial is {f}");
+//int sum = 0;
+//int f = 1;
+//for (int i = 1; i <= 5; i++)
+//{
+//    sum += i;
+//    f *= i;
+//    Console.Write($"{i}+");
+//}
+//Console.Write($"\b={sum}");
+//Console.Write($"\n The factorial is {f}");
 
-            //int num,i;
-            //Console.WriteLine("Enter a  number");
-            //num = Convert.ToInt32(Console.ReadLine());
+//int num,i;
+//Console.WriteLine("Enter a  number");
+//num = Convert.ToInt32(Console.ReadLine());
 
-            //for(i=2;i<num;i++)
-            //{
-            //    if (num % i == 0)
-            //        break;
-            //}
-            //if (i == num)
-            //    Console.WriteLine($"{num} is prime");
-            //else
-            //    Console.WriteLine($"{num} is not prime");
+//for(i=2;i<num;i++)
+//{
+//    if (num % i == 0)
+//        break;
+//}
+//if (i == num)
+//    Console.WriteLine($"{num} is prime");
+//else
+//    Console.WriteLine($"{num} is not prime");
 
-            // 1 to 100 all primes nos
-            // 123 all possible combination 
+// 1 to 100 all primes nos
+// 123 all possible combination 
 
-            //-------------------- while 
+//-------------------- while 
 
-            int num, sum = 0, rev = 0;
-            Console.WriteLine("Enter a  number");
-            num = Convert.ToInt32(Console.ReadLine());
-            while (num > 0)
-            {
-                sum += num % 10;
-                rev = rev * 10 + num % 10;
-                num /= 10;
+//int num, sum = 0, rev = 0;
+//Console.WriteLine("Enter a  number");
+//num = Convert.ToInt32(Console.ReadLine());
+//while (num > 0)
+//{
+//    sum += num % 10;
+//    rev = rev * 10 + num % 10;
+//    num /= 10;
 
-            }
-            Console.Write($"The sum of digits {sum}");
-            Console.WriteLine($"The Rev of digits {rev}");
-            int a = 1, b = 0, c;
-            do
-            {
-                c = a + b;
-                Console.WriteLine(c);
-                a = b;
-                b = c;
+//}
+//Console.Write($"The sum of digits {sum}");
+//Console.WriteLine($"The Rev of digits {rev}");
+//int a = 1, b = 0, c;
+//do
+//{
+//    c = a + b;
+//    Console.WriteLine(c);
+//    a = b;
+//    b = c;
 
-            } while (c <= 100);
+//} while (c <= 100);
 
 
-            /*
-             testing
-             1. 1+2+3+4+5+6+7+8+9+10=55
-             2. enter a number print it in word   1234 => One Two Three Four
-             */
+///*********enter a number print it in word   1234 => One Two Three Four***************/
+//int n, num = 0;
+//Console.WriteLine("Enter a  number");
+//n = Convert.ToInt32(Console.ReadLine());
+///* Store reverse of n in num */
+//while (n != 0)
+//{
+//    num = (num * 10) + (n % 10);
+//    n /= 10;
+//}
+//while (num != 0)
+//{
+//    switch (num % 10)
+//    {
+//        case 0:
+//            Console.WriteLine("Zero");
+//            break;
+//        case 1:
+//            Console.WriteLine("One ");
+//            break;
+//        case 2:
+//            Console.WriteLine("Two ");
+//            break;
+//        case 3:
+//            Console.WriteLine("Three ");
+//            break;
+//        case 4:
+//            Console.WriteLine("Four ");
+//            break;
+//        case 5:
+//            Console.WriteLine("Five ");
+//            break;
+//        case 6:
+//            Console.WriteLine("Six ");
+//            break;
+//        case 7:
+//            Console.WriteLine("Seven ");
+//            break;
+//        case 8:
+//            Console.WriteLine("Eight ");
+//            break;
+//        case 9:
+//            Console.WriteLine("Nine ");
+//            break;
+//    }
+
+//    num = num / 10;
+//}
+/*********1 to 100 prime numbers***************/
+int i, a = 1, count;
+
+while (a <= 100)
+{
+    count = 0;
+    i = 2;
+    while (i <= a / 2)
+    {
+        if (a % i == 0)
+        {
+            count++;
+            break;
+        }
+        i++;
+    }
+    if (count == 0 && a != 1)
+    {
+        Console.WriteLine($"{a}");
+    }
+    a++;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ testing
+ 1. 1+2+3+4+5+6+7+8+9+10=55
+ 2. enter a number print it in word   1234 => One Two Three Four
+ */
