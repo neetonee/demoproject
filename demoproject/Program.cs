@@ -89,7 +89,9 @@
 
             } while (c <= 100);
 
+
             /*
+             testing
              1. 1+2+3+4+5+6+7+8+9+10=55
              2. enter a number print it in word   1234 => One Two Three Four
              */
