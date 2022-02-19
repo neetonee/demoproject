@@ -139,7 +139,7 @@
 //    num = num / 10;
 //}
 /*********1 to 100 prime numbers***************/
-int i, a = 1, count;
+/*int i, a = 1, count;
 
 while (a <= 100)
 {
@@ -160,11 +160,7 @@ while (a <= 100)
     }
     a++;
 }
-
-
-
-
-
+*/
 
 
 
